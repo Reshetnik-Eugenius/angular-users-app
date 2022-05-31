@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { UserItemComponent } from './components/user-item/user-item.component';
 import { UserInfoComponent } from './components/user-info/user-info.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserAlbumComponent } from './components/user-album/user-album.component';
+import { UserPostComponent } from './components/user-post/user-post.component';
+import { UserTodoComponent } from './components/user-todo/user-todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserItemComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    UserAlbumComponent,
+    UserPostComponent,
+    UserTodoComponent
   ],
   imports: [
     BrowserModule,
