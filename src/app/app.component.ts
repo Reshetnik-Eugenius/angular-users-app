@@ -15,11 +15,19 @@ export class AppComponent implements OnInit {
     }
 
     users: IUser[] = [];
+    userInfo!: IUser;
 
     getUsers(): void {
         this.userService.getAllUsers().subscribe((users: IUser[]) => {
             this.users = users;
             // console.log(users);
+        });
+    }
+
+    getUserInfo(id: number) {
+        this.userService.getUserById(id).subscribe((user: IUser) => {
+            this.userInfo = user;
+            // console.log(user);
         });
     }
 }

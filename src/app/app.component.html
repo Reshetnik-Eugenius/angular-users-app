@@ -3,7 +3,16 @@
     <div class="user-item-container">
         <app-user-item 
             *ngFor="let user of users" 
-            [user]="user">
+            [user]="user"
+            (click)="getUserInfo(user.id)"
+            >
         </app-user-item>
     </div>
+</div>
+
+<div  class="user-info-container"
+    *ngIf="userInfo">  
+    <app-user-info 
+        [userInfo]="userInfo">
+    </app-user-info>
 </div>
