@@ -1,0 +1,9 @@
+.user-container{
+    display: flex;
+    flex-direction: column;
+}
+.user-item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
