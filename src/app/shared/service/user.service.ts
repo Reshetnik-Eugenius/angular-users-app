@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import {
+    IAlbumPhoto,
+    IPostComment,
     IUser,
     IUserAlbum,
     IUserPost,
@@ -30,5 +32,11 @@ export class UserService {
     }
     getTodosByUserId(id: number): Observable<IUserTodo[]> {
         return this.http.get<IUserTodo[]>(`${URL_API}/users/${id}/todos`);
+    }
+    getCommentsByPostId(id: number): Observable<IPostComment[]> {
+        return this.http.get<IPostComment[]>(`${URL_API}/posts/${id}/comments`);
+    }
+    getPhotosByAlbumId(id: number): Observable<IAlbumPhoto[]> {
+        return this.http.get<IAlbumPhoto[]>(`${URL_API}/albums/${id}/photos`);
     }
 }

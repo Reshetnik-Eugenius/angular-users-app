@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserAlbumComponent } from './components/user-album/user-album.component';
 import { UserPostComponent } from './components/user-post/user-post.component';
 import { UserTodoComponent } from './components/user-todo/user-todo.component';
+import { PostCommentComponent } from './components/post-comment/post-comment.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserTodoComponent } from './components/user-todo/user-todo.component';
     UserInfoComponent,
     UserAlbumComponent,
     UserPostComponent,
-    UserTodoComponent
+    UserTodoComponent,
+    PostCommentComponent
   ],
   imports: [
     BrowserModule,

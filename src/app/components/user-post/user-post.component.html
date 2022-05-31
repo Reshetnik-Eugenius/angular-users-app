@@ -1,4 +1,18 @@
 <div>
     <h2>{{post.title}}</h2>
     <p>{{post.body}}</p>
+
+    <button
+        (click)="getCommentsByPostId()">
+        Show/hide comments
+    </button>
+
+    <div 
+        class="comment-container"
+        *ngIf="isShowComments"> 
+        <app-post-comment 
+            *ngFor="let comment of comments"
+            [comment]="comment">
+        </app-post-comment>
+    </div>
 </div>
