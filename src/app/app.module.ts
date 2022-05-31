@@ -10,6 +10,7 @@ import { UserAlbumComponent } from './components/user-album/user-album.component
 import { UserPostComponent } from './components/user-post/user-post.component';
 import { UserTodoComponent } from './components/user-todo/user-todo.component';
 import { PostCommentComponent } from './components/post-comment/post-comment.component';
+import { AlbumPhotoComponent } from './components/album-photo/album-photo.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PostCommentComponent } from './components/post-comment/post-comment.com
     UserAlbumComponent,
     UserPostComponent,
     UserTodoComponent,
-    PostCommentComponent
+    PostCommentComponent,
+    AlbumPhotoComponent
   ],
   imports: [
     BrowserModule,

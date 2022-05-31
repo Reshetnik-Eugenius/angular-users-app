@@ -1,3 +1,19 @@
 <div>
     <h2>{{album.title}}</h2>
+
+    <button
+        (click)="getPhotosByAlbumId()">
+        Show/hide comments
+    </button>
+
+    <div 
+        class="photo-container"
+        *ngIf="isShowPhotos"> 
+    
+        <app-album-photo 
+            *ngFor="let photo of photos"
+            [photo]="photo">
+        </app-album-photo>
+    </div>
+
 </div>
